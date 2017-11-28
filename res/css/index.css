@@ -9,10 +9,13 @@ html {
     font-family: Helvetica;
 }
 
-
+body {
+    margin: 0;
+    top:0;
+}
 .container {
     width: 960px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -22,7 +25,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
     padding: 1rem 2rem;
 }
 
@@ -53,6 +55,7 @@ header nav span a {
 }
 
 .banner {
+    padding-top: 1rem;
     height: 30rem;
     background-image: url("../img/glasses-bg.png");
     background-size: cover;
@@ -155,3 +158,24 @@ footer span {
 }
 
 
+@media only screen and (max-width: 768px) {
+    /* tablet portrait */
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        height: 22rem;
+    }
+
+    .banner {
+        padding-top: 0;
+    }
+
+    .banner .box {
+        margin-right: 2rem;
+        padding: 0.75rem 4rem;
+        font-size: 1.33rem;
+        margin-top: 5rem;
+    }
+}
