@@ -49,6 +49,9 @@ header nav span a {
     text-decoration: none;
 }
 
+header nav span.menu-btn {
+    display: none;
+}
 
 .flex {
     display: flex;
@@ -177,5 +180,73 @@ footer span {
         padding: 0.75rem 4rem;
         font-size: 1.33rem;
         margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* PHONE */
+
+    .banner {
+        height: 17rem;
+        background-position: 20%;
+    }
+
+    header nav span {
+        display: none;
+    }
+
+    header nav span.menu-btn {
+        display: initial;
+    }
+
+    .banner .box {
+        width: 100%;
+        padding: 1rem auto;
+        text-align: center;
+        margin-top: 9rem;
+        margin-right: 0;
+    }
+
+    .main {
+        margin-top: 3.77rem;
+        margin-bottom: 3.77rem;
+    }
+
+    main .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .features .feature {
+        margin: 1.54rem 0;
+        font-size: 0.77rem;
+    }
+
+    main .stickers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .stickers .sticker {
+        width: 100%;
+        margin-bottom: 4rem;
+        margin-left: 0;
+    }
+
+    main .stickers .sticker p {
+        font-size: 0.77rem;
+    }
+
+    footer img {
+        display: block;
+        margin: auto;
+    }
+
+    footer span {
+        display: none;
     }
 }
